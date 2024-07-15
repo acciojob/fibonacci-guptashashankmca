@@ -1,20 +1,18 @@
 function fibonacci(num) {
 // your code here
-	if(num==0){
-		return 0;
-	}
-	if(num==2){
-		return 1;
-	}
-	let a = 0;
-	let b = 1;
-	let fib;
-
-	for (let i = 2; i<=num; i++) {
-		fib = a + b;
-		a = b;
-		b = fib;
-	}
-	return fib;
+	function fibonacci(num) {
+let a = 0, b = 1, fib;
+ 
+if (num === 1 ||num==0) {
+    return 0;
+}
+for (let i = 2; i <= num; i++) {
+    fib = a + b;
+    a = b;
+    b = fib;
+}
+return a;
+}
+module.exports = fibonacci ;
 }
 module.exports = fibonacci;
