@@ -1,6 +1,4 @@
 function fibonacci(num) {
-// your code here
-	function fibonacci(num) {
 let a = 0, b = 1, fib;
  
 if (num === 1 ||num==0) {
